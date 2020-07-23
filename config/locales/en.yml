@@ -50,3 +50,18 @@ en:
   users:
     new:
       signup: "Sign Up"
+      username: "Username"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirm Password"
+    create:
+      flash: Welcome to the Sample App, %{username}!
+    show:
+      flash: "User not found !"
+  helpers:
+    label:
+      user:
+        name: "Username"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirm Password"

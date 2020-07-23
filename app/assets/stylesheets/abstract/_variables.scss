@@ -2,5 +2,13 @@
 $purple: #f9f9;
 $gray-light: #777;
 $gray-medium-light: #eaeaea;
+$gray-medium: #bbb;
 $gray: #555;
 $gray-darker: #222;
+$state-danger-text: rgb(247, 12, 12);
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
