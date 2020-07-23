@@ -14,6 +14,11 @@ en:
       languages: "Languages"
       english: "English"
       japanese: "Japanese"
+      account: "Account"
+      users: "Users"
+      logout: "Log Out"
+      profile: "Profile"
+      settings: "Settings"
     footer:
       ruby_on_rails: "Ruby On Rails Tutorials"
       author: "Nhat Quang"
@@ -54,10 +59,25 @@ en:
       email: "Email"
       password: "Password"
       password_confirmation: "Confirm Password"
+      olduser: "Already registered? "
+      login: "Click here !!"
     create:
       flash: Welcome to the Sample App, %{username}!
     show:
       flash: "User not found !"
+      unauthorized: "You must be logged in first !!"
+  sessions:
+    new:
+      login: "Log In"
+      email: "Email"
+      password: "Password"
+      newuser: "New user?"
+      signup: "Sign up now!"
+    create:
+      success: Log in successfully, hello %{username}!
+      danger: There was something wrong with your account
+    destroy: 
+      flash: "You have logged out !!"
   helpers:
     label:
       user:
