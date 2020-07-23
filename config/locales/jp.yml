@@ -1,11 +1,28 @@
 jp:
   layouts: 
-    application: 
+    application:
       app_title: "サンプルアプリ"
       english: "英語"
       japanese: "日本語"
+    header:
+      app_title: "サンプルアプリ"
+      about: "情報"
+      contact: "連絡"
+      help: "助け"
+      home: "ホーム"
+      login: "ログイン"
+      languages: "言語"
+      english: "英語"
+      japanese: "日本語"
+    footer: 
+      ruby_on_rails: "Ruby on Railsチュートリアル"
+      author: "ニャット・クアン"
+      about: "情報"
+      contact: "連絡"
+      news: "ニュース"
   static_pages:
     home:
+      home_title: "ホームページ"
       home_description_title: "これは、" 
       home_description_detail: "サンプルアプリケーションのホームページです。"
       ruby_on_rails: "Ruby on Railsチュートリアル"
@@ -13,6 +30,7 @@ jp:
       contact: "連絡ページ"
       help: "助けページ"
       home: "ホームページ"
+      signup : "登録"
     help:
       help_title: "助け"
       help_description_title: "ここで助けを得る："
@@ -29,4 +47,6 @@ jp:
       contact_title: "連絡"
       contact_description_title: "ここで連絡してください："
       contact_page: "連絡先"
-      
+  users:
+    new:
+      signup: "登録"

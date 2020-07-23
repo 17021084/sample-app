@@ -2,15 +2,9 @@
 <h1> <%= t ".help_title" %> </h1>
 <div>
   <p>
-    <%= t ".help_description_title" %>
     <%= link_to t(".rails_tutorial_help_page"), Settings.link.help %>
-  </p>
-</div>
-<div>
-  <p>
-    <%= t ".help_description_detail" %>
-    <em><%= link_to t(".ruby_on_rails_tutorial"), Settings.link.book %></em>
-  </p>
-</div>
-
-<%= link_to t("static_pages.home.home"), root_path(locale) %>
+    <p>
+      <%= t ".help_description_detail" %>
+      <em><%= link_to t(".ruby_on_rails_tutorial"), Settings.link.book %></em>
+    </p>
+  </div>
