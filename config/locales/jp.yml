@@ -1,0 +1,32 @@
+jp:
+  layouts: 
+    application: 
+      app_title: "サンプルアプリ"
+      english: "英語"
+      japanese: "日本語"
+  static_pages:
+    home:
+      home_description_title: "これは、" 
+      home_description_detail: "サンプルアプリケーションのホームページです。"
+      ruby_on_rails: "Ruby on Railsチュートリアル"
+      about: "情報ページ"
+      contact: "連絡ページ"
+      help: "助けページ"
+      home: "ホームページ"
+    help:
+      help_title: "助け"
+      help_description_title: "ここで助けを得る："
+      help_description_detail:  "このサンプルアプリのヘルプについて："
+    about:
+      about_title: "情報"
+      about_description_title: "いくつかの追加の情報源と情報："
+      about_description_tutorial: "ファミリーのチュートリアル："
+      about_description_book: "参考の本："
+      about_description_series: "シリーズ："
+      about_description_ror: "Ruby on Rails："
+      about_description_end: "これはチュートリアルのサンプルアプリです。"
+    contact:
+      contact_title: "連絡"
+      contact_description_title: "ここで連絡してください："
+      contact_page: "連絡先"
+      
