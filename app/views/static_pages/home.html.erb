@@ -1,0 +1,11 @@
+<h1> <%= t ".home_title" %> </h1>
+<p>
+  <%= t ".home_description_title" %>
+  <%= link_to t(".ruby_on_rails"), "https://www.railstutorial.org" %>
+  <%= t ".home_description_detail" %>
+</p>
+<ul>
+  <li> <%= link_to t(".about"), about_path(locale) %></li>
+  <li><%= link_to t(".contact"), contact_path(locale) %></li>
+  <li><%= link_to t(".help"), help_path(locale) %></li>
+</ul>

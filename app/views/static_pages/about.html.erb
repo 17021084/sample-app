@@ -1,0 +1,29 @@
+<% provide :title, t(".about_title") %>
+<h1><%= t(".about_title") %></h1>
+<p>
+  <%= t ".about_description_title" %>
+  <ul>
+    <li>
+      <%= link_to t("ruby_on_rails_tutorial"), "https://www.railstutorial.org" %>
+    </li>
+    <li>
+      <%= t ".about_description_tutorial" %>
+      <%= link_to t(".learn_enough"), "https://www.learnenough.com/" %>
+    </li>
+    <li>
+      <%= t ".about_description_book" %>
+      <%= link_to t(".book"), "https://www.railstutorial.org/book" %>
+    </li>
+    <li>
+      <%= t ".about_description_series" %>
+      <%= link_to t(".screencast_series"), "https://screencasts.railstutorial.org/" %>
+    </li>
+    <li>
+      <%= t ".about_description_ror" %>
+      <%= link_to t(".ruby_on_rails"), "https://rubyonrails.org/" %>
+    </li>
+  </ul>
+  <%= t ".about_description_end" %>
+</p>
+
+<%= link_to t("static_pages.home.home"), root_path(locale) %>
