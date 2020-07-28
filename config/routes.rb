@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  # Routes define
   scope "(:locale)", locale: /en|jp/ do
     root "static_pages#home"
     get "/help", to: "static_pages#help"
