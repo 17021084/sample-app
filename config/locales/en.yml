@@ -4,8 +4,25 @@ en:
       app_title: "Sample App"
       english: "English"
       japanese: "Japanese"
+    header: 
+      app_title: "Sample App"
+      about: "About"
+      contact: "Contact" 
+      help: "Help"
+      home: "Home"
+      login: "Log in"
+      languages: "Languages"
+      english: "English"
+      japanese: "Japanese"
+    footer: 
+      ruby_on_rails: "Ruby On Rails Tutorials"
+      author: "Nhat Quang"
+      about: "About"
+      contact: "Contact" 
+      news: "News"
   static_pages:
     home:
+      home_title: "Homepage"
       home_description_title: "This is the home page for the"
       home_description_detail: "sample application."
       ruby_on_rails: "Ruby On Rails Tutorials"
@@ -13,6 +30,7 @@ en:
       contact: "Contact Page"
       help: "Help Page"
       home: "Home Page"
+      signup : "Sign up now!"
     help:
       help_title: "Help"
       help_description_title: "Get help here: "
@@ -29,4 +47,6 @@ en:
       contact_title: "Contact"
       contact_description_title: "Contact here: "
       contact_page: "Contact page"
-      
+  users:
+    new:
+      signup: "Sign Up"
