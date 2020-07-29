@@ -1,21 +1,20 @@
-   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <%= link_to t(".app_title"), root_path, class: "navbar-brand", id: "logo" %>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        </ul>
-        <ul class="navbar-nav ml-auto my-2 my-lg-0 mr-3">
-          <li class="nav-item"><%= link_to t(".help"), help_path(locale) , class: "nav-link"%></li>
-          <li class="nav-item"><%= link_to t(".login"), "#", class: "nav-link" %></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= t ".languages" %>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to t(".english"), { locale: "en" }, { class: "dropdown-item" } %>
-              <%= link_to t(".japanese"), { locale: "jp" }, { class: "dropdown-item" } %>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <%= link_to t(".app_title"), root_path, class: "navbar-brand", id: "logo" %>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    </ul>
+    <ul class="navbar-nav ml-auto my-2 my-lg-0 mr-3">
+      <li class="nav-item"><%= link_to t(".help"), help_path(locale) , class: "nav-link"%></li>
+      <li class="nav-item"><%= link_to t(".login"), "#", class: "nav-link" %></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= t ".languages" %>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to t(".english"), {locale: "en"}, {class: "dropdown-item"} %>
+          <%= link_to t(".japanese"), {locale: "jp"}, {class: "dropdown-item"} %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -4,21 +4,21 @@ en:
       app_title: "Sample App"
       english: "English"
       japanese: "Japanese"
-    header: 
+    header:
       app_title: "Sample App"
       about: "About"
-      contact: "Contact" 
+      contact: "Contact"
       help: "Help"
       home: "Home"
       login: "Log in"
       languages: "Languages"
       english: "English"
       japanese: "Japanese"
-    footer: 
+    footer:
       ruby_on_rails: "Ruby On Rails Tutorials"
       author: "Nhat Quang"
       about: "About"
-      contact: "Contact" 
+      contact: "Contact"
       news: "News"
   static_pages:
     home:
@@ -30,7 +30,7 @@ en:
       contact: "Contact Page"
       help: "Help Page"
       home: "Home Page"
-      signup : "Sign up now!"
+      signup: "Sign up now!"
     help:
       help_title: "Help"
       help_description_title: "Get help here: "

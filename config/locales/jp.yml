@@ -1,5 +1,5 @@
 jp:
-  layouts: 
+  layouts:
     application:
       app_title: "サンプルアプリ"
       english: "英語"
@@ -14,7 +14,7 @@ jp:
       languages: "言語"
       english: "英語"
       japanese: "日本語"
-    footer: 
+    footer:
       ruby_on_rails: "Ruby on Railsチュートリアル"
       author: "ニャット・クアン"
       about: "情報"
@@ -23,18 +23,18 @@ jp:
   static_pages:
     home:
       home_title: "ホームページ"
-      home_description_title: "これは、" 
+      home_description_title: "これは、"
       home_description_detail: "サンプルアプリケーションのホームページです。"
       ruby_on_rails: "Ruby on Railsチュートリアル"
       about: "情報ページ"
       contact: "連絡ページ"
       help: "助けページ"
       home: "ホームページ"
-      signup : "登録"
+      signup: "登録"
     help:
       help_title: "助け"
       help_description_title: "ここで助けを得る："
-      help_description_detail:  "このサンプルアプリのヘルプについて："
+      help_description_detail: "このサンプルアプリのヘルプについて："
     about:
       about_title: "情報"
       about_description_title: "いくつかの追加の情報源と情報："
