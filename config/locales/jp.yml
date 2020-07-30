@@ -14,6 +14,11 @@ jp:
       languages: "言語"
       english: "英語"
       japanese: "日本語"
+      account: "アカウント"
+      users: "格ユーザー"
+      logout: "ログアウト"
+      profile: "プロフィール"
+      settings: "設定"
     footer:
       ruby_on_rails: "Ruby on Railsチュートリアル"
       author: "ニャット・クアン"
@@ -54,10 +59,25 @@ jp:
       email: "E・メール"
       password: "パスワード"
       password_confirmation: "再認証"
+      olduser: "ログインは"
+      login: "こちら！！"
     create:
-      flash: よろしく, %{username}!
+      flash: よろしく、%{username}!
     show:
       flash: "ユーザーが見つかりません !!"
+      unauthorized: "最初にログインする必要があります !!"
+  sessions:
+    new:
+      login: "ログイン"
+      email: "E・メール"
+      password: "パスワード"
+      newuser: "新規登録は"
+      signup: "こちら！！"
+    create:
+      success: よろしく、%{username}!
+      danger: "アカウントに問題がありました!!"
+    destroy:
+      flash: "ログアウトしました!!"
   helpers:
     label:  
       user:

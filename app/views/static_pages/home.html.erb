@@ -5,7 +5,9 @@
     <%= link_to t(".ruby_on_rails"), Settings.link.home %>
     <%= t ".home_description_detail" %>
   </p>
-  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  <% unless logged_in? %>
+    <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
 </div>
 
 <%= link_to image_tag("rails.jpg", alt: "Rails logo", width: "200px"), Settings.link.ruby_on_rails %>
