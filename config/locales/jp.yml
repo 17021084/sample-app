@@ -50,3 +50,18 @@ jp:
   users:
     new:
       signup: "登録"
+      username: "ユーザー"
+      email: "E・メール"
+      password: "パスワード"
+      password_confirmation: "再認証"
+    create:
+      flash: よろしく, %{username}!
+    show:
+      flash: "ユーザーが見つかりません !!"
+  helpers:
+    label:  
+      user:
+        name: "ユーザー"
+        email: "E・メール"
+        password: "パスワード"
+        password_confirmation: "再認証"

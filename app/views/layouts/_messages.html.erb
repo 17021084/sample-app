@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1 mt-4 ml-4">
+    <% flash.each do |name, msg| %>
+      <div class="alert alert-<%= name %> alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>
+          <%= content_tag :div, msg, id: "flash_#{name}" if msg.is_a?(String) %>
+        </strong>
+      </div>
+      <script>
+        $(".alert").alert();
+      </script>
+    <% end %>
+  </div>
+</div>

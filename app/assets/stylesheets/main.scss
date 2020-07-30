@@ -4,5 +4,10 @@
 
 @import 'base/typography';
 
+@import 'component/debug';
+@import 'component/alert';
+
 @import 'layout/header';
 @import 'layout/footer';
+
+@import 'page/user/show';
