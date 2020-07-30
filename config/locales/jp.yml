@@ -73,6 +73,7 @@ jp:
       password: "パスワード"
       newuser: "新規登録は"
       signup: "こちら！！"
+      remember: "このコンピュータで私を覚えて"
     create:
       success: よろしく、%{username}!
       danger: "アカウントに問題がありました!!"

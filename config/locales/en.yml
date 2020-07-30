@@ -73,6 +73,7 @@ en:
       password: "Password"
       newuser: "New user?"
       signup: "Sign up now!"
+      remember: "Remember me on this computer"
     create:
       success: Log in successfully, hello %{username}!
       danger: There was something wrong with your account
