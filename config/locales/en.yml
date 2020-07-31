@@ -1,4 +1,11 @@
 en:
+  views:
+    pagination:
+      first: "« First"
+      last: "Last »"
+      previous: "‹ Prev"
+      next: "Next ›"
+      truncate: "…"
   layouts:
     application:
       app_title: "Sample App"
@@ -53,19 +60,36 @@ en:
       contact_description_title: "Contact here: "
       contact_page: "Contact page"
   users:
+    index:
+      users: "All Users"
     new:
       signup: "Sign Up"
-      username: "Username"
-      email: "Email"
-      password: "Password"
-      password_confirmation: "Confirm Password"
-      olduser: "Already registered? "
-      login: "Click here !!"
     create:
       flash: Welcome to the Sample App, %{username}!
     show:
       flash: "User not found !"
       unauthorized: "You must be logged in first !!"
+      forbidden: "You are not authorized to access this page"
+    edit:
+      update: "Update profile"
+      unauthorized: "You must be logged in first !!"
+      forbidden: "You are not authorized to access this page"
+    update: 
+      success: "Your account was successfully updated !!"
+    destroy: 
+      success: "User deleted !!"
+    form:
+      signup: "Sign Up"
+      username: "Username"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirm Password"
+      old_user: "Already registered? "
+      login: "Click here !!"
+      update: "Update"
+    user:
+      delete: "Delete"
+      confirm: "Are you sure?"
   sessions:
     new:
       login: "Log In"
