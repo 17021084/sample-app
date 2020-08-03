@@ -62,8 +62,10 @@ jp:
   users:
     index:
       users: "格ユーザー"
+      unauthorized: "最初にログインする必要があります !!"
     new:
       signup: "登録"
+      unauthorized: "最初にログインする必要があります !!"
     create:
       flash: よろしく、%{username}!
       active_notify: "メールを確認して、アカウントを有効にしてください!!"
@@ -104,12 +106,36 @@ jp:
       newuser: "新規登録は"
       signup: "こちら！！"
       remember: "このコンピュータで私を覚えて"
+      forget: "パスワードを忘れましたか？"
     create:
       success: よろしく、%{username}!
       danger: "アカウントに問題がありました!!"
       warning: "アカウントがアクティブ化されていません。メールでアクティベーションリンクを確認します"
     destroy:
       flash: "ログアウトしました!!"
+  password_resets:
+    new:
+      email: "E・メール"
+      submit: "確認"
+      forget: "パスワードをお忘れ"
+    create:
+      info: "パスワードのリセット手順を記載したメールを送信しました"
+      danger: "メールアドレスが見つかりません"
+    edit:
+      reset: "パスワードのリセット"
+      flash: "ユーザーが見つかりません !!"
+      password: "パスワード"
+      password_confirmation: "再認証"
+      submit: "リセット"
+      forbidden: "この操作を行う権限がありません"
+      expire: "パスワードのリセットの有効期限が切れています。"
+    update:
+      flash: "ユーザーが見つかりません !!"
+      forbidden: "この操作を行う権限がありません"
+      empty: "パスワードは空にできません"
+      reset: "パスワードがリセットされました。"
+      expire: "パスワードのリセットの有効期限が切れています。"
+      fail: "パスワードのリセットに失敗しました!!"
   user_mailer:
     account_activation:
       subject: "アカウント開設"
@@ -117,6 +143,11 @@ jp:
       greeting: "よろしく"
       detail: "サンプルアプリへようこそ！以下のリンクをクリックして、アカウントを有効にしてください"
       link: "アクティブ"
+    password_reset:
+      title: "パスワードのリセット"
+      headline: "パスワードをリセットするには、以下のリンクをクリックしてください："
+      warning: "このリンクは2時間で期限切れになります。"
+      endline: "パスワードの再設定をリクエストしていない場合は、このメールを無視して、パスワードはそのまま残ります。"
   helpers:
     label:  
       user:

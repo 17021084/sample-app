@@ -25,3 +25,5 @@ pagination:
   per_page: 10
 gravatar:
   link: "https://gravatar.com/emails"
+time:
+  expired: 2

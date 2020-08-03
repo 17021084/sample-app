@@ -1,0 +1,21 @@
+<% provide :title, t(".forget") %>
+<h1><%= t ".forget" %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(scope: :password_reset, local: true, role: "form", url: password_resets_path) do |form| %>
+      <div class="form-group row">
+        <div class="col-form-label col-sm-4">
+          <%= form.label :email, t(".email") %>
+        </div>
+        <div class="col-sm-8">
+          <%= form.email_field :email, class: "form-control", placeholder: t(".email"), autofocus: true%>
+        </div>
+      </div>
+      <div class="form-group d-flex flex-column align-items-center">
+        <div class="col-sm-4">
+          <%= form.submit t(".submit"), class: "btn btn-primary btn-lg" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
