@@ -1,4 +1,11 @@
 jp:
+  views:
+    pagination:
+      first: "« 先頭"
+      last: "最終 »"
+      previous: "‹ 前"
+      next: "次 ›"
+      truncate: "…"
   layouts:
     application:
       app_title: "サンプルアプリ"
@@ -53,19 +60,36 @@ jp:
       contact_description_title: "ここで連絡してください："
       contact_page: "連絡先"
   users:
+    index:
+      users: "格ユーザー"
     new:
       signup: "登録"
-      username: "ユーザー"
-      email: "E・メール"
-      password: "パスワード"
-      password_confirmation: "再認証"
-      olduser: "ログインは"
-      login: "こちら！！"
     create:
       flash: よろしく、%{username}!
     show:
       flash: "ユーザーが見つかりません !!"
       unauthorized: "最初にログインする必要があります !!"
+      forbidden: "このページにアクセスする権限がありません !!"
+    edit:
+      update: "プロフィールアップデイト"
+      unauthorized: "最初にログインする必要があります !!"
+      forbidden: "このページにアクセスする権限がありません !!"
+    update:
+      success: "アカウントが更新されました!!"
+    destroy:
+      success: "ユーザーが削除されました!!"
+    form:
+      signup: "登録"
+      username: "ユーザー"
+      email: "E・メール"
+      password: "パスワード"
+      password_confirmation: "再認証"
+      old_user: "ログインは"
+      login: "こちら！！"
+      update: "アップデイト"
+    user:
+      delete: "デリート"
+      confirm: "確認しますか"
   sessions:
     new:
       login: "ログイン"

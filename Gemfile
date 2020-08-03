@@ -9,6 +9,7 @@ gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "config"
 gem "jbuilder", "~> 2.7"
+gem "kaminari"
 gem "mysql2"
 gem "puma", "~> 4.1"
 gem "rails-i18n", "~> 6.0.0"
@@ -18,6 +19,7 @@ gem "webpacker", "~> 4.0"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "faker", "2.1.2"
   gem "rubocop", "~> 0.74.0", require: false
   gem "rubocop-rails", "~> 2.3.2", require: false
 end
