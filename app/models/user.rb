@@ -1,8 +1,10 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token
-
   VALID_EMAIL_REGEX = Settings.validations.user.email_regex
   USERS_PARAMS = %i(name email password password_confirmation).freeze
+
+  attr_accessor :remember_token, :activation_token
+
+  scope :is_activated, ->{where activated: true}
 
   validates :name, presence: true,
     length: {minimum: Settings.validations.user.name_minlength,
@@ -19,6 +21,7 @@ class User < ApplicationRecord
              maximum: Settings.validations.user.password_maxlength},
     allow_nil: true
 
+  before_create :create_activation_digest
   before_save :downcase_email
 
   has_secure_password
@@ -48,15 +51,29 @@ class User < ApplicationRecord
     update remember_digest: nil
   end
 
-  def authenticated? remember_token
-    return false unless remember_digest
+  def authenticated? attribute, token
+    digest = send "#{attribute}_digest"
+    return false unless digest
 
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    BCrypt::Password.new(digest).is_password? token
+  end
+
+  def activate
+    update activated: true, activated_at: Time.zone.now
+  end
+
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
   end
 
   private
 
   def downcase_email
     email.downcase!
+  end
+
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest activation_token
   end
 end

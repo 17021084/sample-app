@@ -66,6 +66,8 @@ jp:
       signup: "登録"
     create:
       flash: よろしく、%{username}!
+      active_notify: "メールを確認して、アカウントを有効にしてください!!"
+      danger: "アカウントに問題がありました!!"
     show:
       flash: "ユーザーが見つかりません !!"
       unauthorized: "最初にログインする必要があります !!"
@@ -90,6 +92,10 @@ jp:
     user:
       delete: "デリート"
       confirm: "確認しますか"
+  account_activations:
+    edit:
+      activated_success: "アカウントが有効になりました！"
+      activated_unsuccess: "無効なアクティベーションリンク!"  
   sessions:
     new:
       login: "ログイン"
@@ -101,8 +107,16 @@ jp:
     create:
       success: よろしく、%{username}!
       danger: "アカウントに問題がありました!!"
+      warning: "アカウントがアクティブ化されていません。メールでアクティベーションリンクを確認します"
     destroy:
       flash: "ログアウトしました!!"
+  user_mailer:
+    account_activation:
+      subject: "アカウント開設"
+      title: "サンプルアプリ"
+      greeting: "よろしく"
+      detail: "サンプルアプリへようこそ！以下のリンクをクリックして、アカウントを有効にしてください"
+      link: "アクティブ"
   helpers:
     label:  
       user:

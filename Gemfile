@@ -8,6 +8,7 @@ gem "rails", "~> 6.0.3", ">= 6.0.3.2"
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "config"
+gem "figaro"
 gem "jbuilder", "~> 2.7"
 gem "kaminari"
 gem "mysql2"
