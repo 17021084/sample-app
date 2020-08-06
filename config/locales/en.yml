@@ -43,6 +43,11 @@ en:
       help: "Help Page"
       home: "Home Page"
       signup: "Sign up now!"
+      profile: "View my profile"
+      placeholder: "Compose new micropost...."
+      post: "Post"
+      created: "Micropost created!"
+      headline: "Micropost Feed"
     help:
       help_title: "Help"
       help_description_title: "Get help here: "
@@ -74,6 +79,9 @@ en:
       flash: "User not found !"
       unauthorized: "You must be logged in first !!"
       forbidden: "You are not authorized to access this page"
+      total: "Total microposts:"
+      posted: "Posted"
+      ago: "ago."
     edit:
       update: "Update profile"
       unauthorized: "You must be logged in first !!"
@@ -82,6 +90,8 @@ en:
       success: "Your account was successfully updated !!"
     destroy: 
       success: "User deleted !!"
+      delete_post_success: "Micropost deleted !!"
+      delete_post_fail: "Fail to delete !!"
     form:
       signup: "Sign Up"
       username: "Username"
@@ -155,3 +165,9 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Confirm Password"
+  microposts:
+    image_size: "Maximum file size is 5MB. Please choose a smaller file."
+    image_format: "Must be a valid image format"
+    image_size: "Should be less than 5MB"
+    one: "%{count} micropost"
+    other: "%{count} microposts"

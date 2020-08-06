@@ -5,12 +5,15 @@ ruby "2.7.1"
 
 gem "rails", "~> 6.0.3", ">= 6.0.3.2"
 
+gem "active_storage_validations"
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "config"
 gem "figaro"
+gem "image_processing", "~> 1.2"
 gem "jbuilder", "~> 2.7"
 gem "kaminari"
+gem "mini_magick"
 gem "mysql2"
 gem "puma", "~> 4.1"
 gem "rails-i18n", "~> 6.0.0"

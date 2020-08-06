@@ -1,0 +1,10 @@
+<div class="center jumbotron my-3">
+  <h1> <%= t "static_pages.home.home_title" %> </h1>
+  <p>
+    <%= t "static_pages.home.home_description_title" %>
+    <%= link_to t("static_pages.home.ruby_on_rails"), Settings.link.home %>
+    <%= t "static_pages.home.home_description_detail" %>
+  </p>
+  <%= link_to t("static_pages.home.signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.jpg", alt: "Rails logo", width: "200px"), Settings.link.ruby_on_rails %>

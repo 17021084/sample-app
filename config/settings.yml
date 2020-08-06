@@ -19,10 +19,17 @@ validations:
     password_maxlength: 15
     avatar_default_size: 80
     avatar_size: 50
+  post:
+    content_length: 140
+    content_type: /%w(image/jpeg image/gif image/png)/
+    max_file_size: 5
+    image_type: "image/jpeg,image/gif,image/png"
+    resize_limit: [500, 500]
 form:
   checkbox: "1"
 pagination:
-  per_page: 10
+  users_per_page: 10
+  posts_per_page: 5
 gravatar:
   link: "https://gravatar.com/emails"
 time:

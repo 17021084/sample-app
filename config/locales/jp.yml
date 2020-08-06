@@ -43,6 +43,11 @@ jp:
       help: "助けページ"
       home: "ホームページ"
       signup: "登録"
+      profile: "プロフィール"
+      placeholder: "新しいマイクロポストを作成..."
+      post: "ポスト"
+      created: "マイクロポストが作成されました！"
+      headline: "マイクロポストフィード"
     help:
       help_title: "助け"
       help_description_title: "ここで助けを得る："
@@ -74,6 +79,9 @@ jp:
       flash: "ユーザーが見つかりません !!"
       unauthorized: "最初にログインする必要があります !!"
       forbidden: "このページにアクセスする権限がありません !!"
+      total: "マイクロポスト:"
+      posted: "投稿"
+      ago: "前。"
     edit:
       update: "プロフィールアップデイト"
       unauthorized: "最初にログインする必要があります !!"
@@ -82,6 +90,8 @@ jp:
       success: "アカウントが更新されました!!"
     destroy:
       success: "ユーザーが削除されました!!"
+      delete_post_success: "マイクロポストを削除しました!!"
+      delete_post_fail: "削除できません!!"
     form:
       signup: "登録"
       username: "ユーザー"
@@ -155,3 +165,49 @@ jp:
         email: "E・メール"
         password: "パスワード"
         password_confirmation: "再認証"
+  microposts:
+    image_size: "最大ファイルサイズは5MBです。より小さいファイルを選択してください。"
+    image_format: "有効な画像形式である必要があります"
+    image_size: "5MB未満である必要があります"
+    one: "%{count} マイクロポスト"
+    other: "%{count} マイクロポスト"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 約1時間
+        other: 約%{count}時間
+      about_x_months:
+        one: 約1ヶ月
+        other: 約%{count}ヶ月
+      about_x_years:
+        one: 約1年
+        other: 約%{count}年
+      almost_x_years:
+        one: 1年弱
+        other: "%{count}年弱"
+      half_a_minute: 30秒前後
+      less_than_x_seconds:
+        one: 1秒以内
+        other: "%{count}秒未満"
+      less_than_x_minutes:
+        one: 1分以内
+        other: "%{count}分未満"
+      over_x_years:
+        one: 1年以上
+        other: "%{count}年以上"
+      x_seconds:
+        one: 1秒
+        other: "%{count}秒"
+      x_minutes:
+        one: 1分
+        other: "%{count}分"
+      x_days:
+        one: 1日
+        other: "%{count}日"
+      x_months:
+        one: 1ヶ月
+        other: "%{count}ヶ月"
+      x_years:
+        one: 1年
+        other: "%{count}年"
+    
