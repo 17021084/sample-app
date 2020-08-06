@@ -62,8 +62,10 @@ en:
   users:
     index:
       users: "All Users"
+      unauthorized: "You must be logged in first !!"
     new:
       signup: "Sign Up"
+      unauthorized: "You must be logged in first !!"
     create:
       flash: Welcome to the Sample App, %{username}!
       active_notify: "Please check your email to activate your account!!"
@@ -104,12 +106,36 @@ en:
       newuser: "New user?"
       signup: "Sign up now!"
       remember: "Remember me on this computer"
+      forget: "Forget your password?"
     create:
       success: Log in successfully, hello %{username}!
       danger: "There was something wrong with your account"
       warning: "Account not activated. Check your email for the activation link."
     destroy: 
       flash: "You have logged out !!"
+  password_resets:
+    new:
+      email: "Email"
+      submit: "Submit"
+      forget: "Forgot password"
+    create:
+      info: "Email sent with password reset instructions"
+      danger: "Email address not found"
+    edit: 
+      reset: "Reset password"
+      flash: "User not found !"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      forbidden: "You are not authorized to do this action"
+      expire: "This link has been expired !!"
+      submit: "Reset"
+    update:
+      flash: "User not found !"
+      forbidden: "You are not authorized to do this action"
+      empty: "Password can't not be empty"
+      reset: "Password has been reset !!"
+      expire: "This link has been expired !!"
+      fail: "Reset password failed !!"
   user_mailer:
     account_activation:
       subject: "Account activation"
@@ -117,6 +143,11 @@ en:
       greeting: "Hi"
       detail: "Welcome to the Sample App! Click on the link below to activate your account"
       link: "Active"
+    password_reset:
+      title: "Password reset"
+      headline: "To reset your password click the link below:"
+      warning: This link will expire in 2 hours."
+      endline: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
   helpers:
     label:
       user:
