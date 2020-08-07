@@ -68,6 +68,8 @@ en:
     index:
       users: "All Users"
       unauthorized: "You must be logged in first !!"
+      microposts: "Microposts:"
+      view: "View my profile"
     new:
       signup: "Sign Up"
       unauthorized: "You must be logged in first !!"
@@ -123,6 +125,11 @@ en:
       warning: "Account not activated. Check your email for the activation link."
     destroy: 
       flash: "You have logged out !!"
+  relationships:
+    create: 
+      user_not_exist: "User not exist !!"
+    destroy: 
+      user_not_exist: "User not exist !!"
   password_resets:
     new:
       email: "Email"
@@ -168,6 +175,12 @@ en:
   microposts:
     image_size: "Maximum file size is 5MB. Please choose a smaller file."
     image_format: "Must be a valid image format"
-    image_size: "Should be less than 5MB"
     one: "%{count} micropost"
     other: "%{count} microposts"
+  errors:
+    image_size: "Should be less than 5MB"
+  follow: 
+    follow: "Follow"
+    unfollow: "Unfollow"
+    followers: "Followers"
+    following: "Following"

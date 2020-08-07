@@ -55,14 +55,6 @@ class UsersController < ApplicationController
     params.require(:user).permit User::USERS_PARAMS
   end
 
-  def find_user
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:danger] = t ".flash"
-    redirect_to root_path
-  end
-
   def require_same_user
     return if current_user? @user
 

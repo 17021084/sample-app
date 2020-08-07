@@ -10,6 +10,7 @@ gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "config"
 gem "figaro"
+gem "i18n-js"
 gem "image_processing", "~> 1.2"
 gem "jbuilder", "~> 2.7"
 gem "kaminari"
