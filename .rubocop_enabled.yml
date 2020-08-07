@@ -271,7 +271,7 @@ Style/MethodCallWithoutArgsParentheses:
 
 Style/MethodDefParentheses:
   Description: >-
-                 Checks if the method definitions have or don"t have
+                 Checks if the method definitions have or don't have
                  parentheses.
   Enabled: true
 
@@ -388,9 +388,9 @@ Style/RedundantSelf:
 Style/RegexpLiteral:
   Description: >-
                  Use %r for regular expressions matching more than
-                 `MaxSlashes` '/' characters.
+                 `MaxSlashes` "/" characters.
                  Use %r only for regular expressions matching more than
-                 `MaxSlashes` '/' character.
+                 `MaxSlashes` "/" character.
   Enabled: true
 
 Style/RescueModifier:
@@ -451,7 +451,7 @@ Layout/SpaceAfterSemicolon:
 
 Layout/SpaceBeforeBlockBraces:
   Description: >-
-                 Checks that the left block brace has or doesn't have space
+                 Checks that the left block brace has or doesn"t have space
                  before it.
   Enabled: true
 
@@ -512,17 +512,17 @@ Layout/TrailingBlankLines:
   Enabled: true
 
 Style/TrailingCommaInArguments:
-  Description: 'Checks for trailing comma in argument lists.'
-  StyleGuide: '#no-trailing-params-comma'
+  Description: "Checks for trailing comma in argument lists."
+  StyleGuide: "#no-trailing-params-comma"
   Enabled: true
 
 Style/TrailingCommaInArrayLiteral:
-  Description: 'Checks for trailing comma in array literals.'
-  StyleGuide: '#no-trailing-array-commas'
+  Description: "Checks for trailing comma in array literals."
+  StyleGuide: "#no-trailing-array-commas"
   Enabled: true
 
 Style/TrailingCommaInHashLiteral:
-  Description: 'Checks for trailing comma in hash literals.'
+  Description: "Checks for trailing comma in hash literals."
   Enabled: true
 
 Layout/TrailingWhitespace:
@@ -747,3 +747,7 @@ Rails/ScopeArgs:
 Rails/Validation:
   Description: "Use sexy validations."
   Enabled: true
+
+Rails/HelperInstanceVariable:
+  Description: "Do not use instance variables in helpers"
+  Enabled: false

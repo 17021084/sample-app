@@ -1,13 +1,19 @@
-<div class="center jumbotron my-3">
-  <h1> <%= t ".home_title" %> </h1>
-  <p>
-    <%= t ".home_description_title" %>
-    <%= link_to t(".ruby_on_rails"), Settings.link.home %>
-    <%= t ".home_description_detail" %>
-  </p>
-  <% unless logged_in? %>
-    <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
-  <% end %>
-</div>
-
-<%= link_to image_tag("rails.jpg", alt: "Rails logo", width: "200px"), Settings.link.ruby_on_rails %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <hr/>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".headline" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <%= render "shared/un_auth_view" %>
+<% end %>

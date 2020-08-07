@@ -3,7 +3,16 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
+  def require_logged_in
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t ".unauthorized"
+    redirect_to login_path locale
+  end
+
   private
+
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end

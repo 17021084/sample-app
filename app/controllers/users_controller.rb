@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.is_activated.page(params[:page]).per Settings.pagination.per_page
+    @users = User.is_activated.page(params[:page]).per Settings.pagination.users_per_page
   end
 
   def new
@@ -26,6 +26,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.recent_posts.page(params[:page])
+                       .per Settings.pagination.posts_per_page
+
     redirect_to root_url && return if @user.activated
   end
 
@@ -60,16 +63,7 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
-  def require_logged_in
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".unauthorized"
-    redirect_to login_path locale
-  end
-
   def require_same_user
-    @user = User.find_by id: params[:id]
     return if current_user? @user
 
     flash[:danger] = t ".forbidden"
