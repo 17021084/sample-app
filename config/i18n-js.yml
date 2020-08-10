@@ -1,0 +1,5 @@
+translations:
+  - file: "public/javascripts/i18n/translations.js"
+    prefix: "import I18n from 'i18n-js';\n"
+  - file: "app/assets/javascripts/i18n/translations.js"
+    only: "*"

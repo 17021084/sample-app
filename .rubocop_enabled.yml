@@ -751,3 +751,7 @@ Rails/Validation:
 Rails/HelperInstanceVariable:
   Description: "Do not use instance variables in helpers"
   Enabled: false
+
+Rails/ReflectionClassName:
+  Description: "Use a string value for class_name."
+  Enabled: false

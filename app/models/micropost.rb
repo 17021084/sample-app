@@ -6,6 +6,8 @@ class Micropost < ApplicationRecord
 
   scope :recent_posts, ->{order created_at: :desc}
 
+  scope :feed_by_user, ->(user_ids){where user_id: user_ids}
+
   delegate :name, to: :user, prefix: true
 
   validates :user_id, presence: true
